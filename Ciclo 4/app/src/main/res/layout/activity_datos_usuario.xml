@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatosUsuario"
+    android:layout_gravity="center">
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="497dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/Rojo"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/TTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@color/teal_700"
+            android:text="@string/UserData"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/EIdentificacion"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/Gris"
+            android:hint="@string/identificacion"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textSize="28dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/ENombres"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:background="@color/Gris"
+            android:hint="@string/NameUser"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textSize="28dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/EApellidos"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:autofillHints="no"
+            android:background="@color/Gris"
+            android:hint="@string/ApellidoUser"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textSize="28dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/Eemail"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:autofillHints="no"
+            android:background="@color/Gris"
+            android:hint="@string/CorreoUsuario"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textSize="28dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/ENumero"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:autofillHints="no"
+            android:background="@color/Gris"
+            android:hint="@string/TelefonoUsuario"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textSize="28dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/EAddress"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:autofillHints="no"
+            android:background="@color/Gris"
+            android:hint="@string/ResidenciaUsuario"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textSize="28dp"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/EPass"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:autofillHints="no"
+            android:background="@color/Gris"
+            android:hint="@string/ContraseñaUsuario"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textSize="28dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/PlanesUsuario"
+            android:layout_width="360dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:autofillHints="no"
+            android:background="@color/Gris"
+            android:hint="@string/PlanUsuario"
+            android:minHeight="48dp"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:textColor="@color/purple_700"/>
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/Planes"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:background="@color/Gris"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Actualizar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/Actualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Actualizar"
+        android:text="@string/BotonModificar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.447" />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,3 +1,28 @@
 <resources>
-    <string name="app_name">Proyecto</string>
+    <string name="app_name">itservices</string>
+
+    <string name="UserData">Datos Usuario</string>
+
+    <string name="PlanUsuario">Plan Actual</string>
+    <string name="identificacion">Numero de Identificación</string>
+    <string name="NameUser">Nombre de Usuario</string>
+    <string name="ApellidoUser">Apellido de Usuario</string>
+    <string name="TelefonoUsuario">Numero de Teléfono </string>
+    <string name="CorreoUsuario">Dirección Correo Usuario</string>
+    <string name="ContraseñaUsuario">Contraseña Usuario </string>
+    <string name="ResidenciaUsuario">Direción Residencia Usuario </string>
+
+    <string name="VerUsuarios">Usuarios</string>
+    <string name="LoginUsuario">Ingresar</string>
+
+
+    <string name="BotonRegistrar">Registrar</string>
+    <string name="BotonBuscar">Buscar</string>
+    <string name="BotonEliminar">Eliminar</string>
+    <string name="BotonModificar">Actualizar</string>
+
+
+
+
+
 </resources>

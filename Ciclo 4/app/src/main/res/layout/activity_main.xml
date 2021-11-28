@@ -6,30 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="142dp"
-        android:layout_height="66dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="350dp"
+        android:layout_height="393dp"
+        android:layout_marginBottom="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/Usuarios"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.778" />
+        app:srcCompat="@drawable/logo2" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/Usuarios"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="157dp" />
+        android:layout_marginStart="80dp"
+        android:onClick="Usuarios"
+        android:text="@string/VerUsuarios"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.919" />
 
-    <LinearLayout
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        tools:layout_editor_absoluteX="175dp"
-        tools:layout_editor_absoluteY="105dp" />
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/LoginUsuario"
+        android:onClick="IngresarCuenta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.987" />
+
+
 </android.support.constraint.ConstraintLayout>
-
